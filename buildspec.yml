@@ -5,6 +5,7 @@ phases:
     commands:
       - echo Installing Mocha...
       - npm install -g mocha
+      - npm install --global a11y
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -14,6 +15,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       - mocha HelloWorld.js
+      - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/
   post_build:
     commands:
       - echo Build completed on `date`
