@@ -16,7 +16,7 @@ phases:
       - echo Compiling the Node.js code
       - mocha HelloWorld.js
       - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/
-      - ally http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/kids/design/2015/04/temperature-chart-to-help-kids-pick.html
+      - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/kids/design/2015/04/temperature-chart-to-help-kids-pick.html
   post_build:
     commands:
       - echo Build completed on `date`
