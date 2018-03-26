@@ -15,6 +15,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Node.js code
       - mocha HelloWorld.js
+      - a11y --help
       - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/
       - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/kids/design/2015/04/temperature-chart-to-help-kids-pick.html
       - a11y http://jekyll-site-dev.s3-website-us-east-1.amazonaws.com/2017/09/losing-confidence-cleaning-up-after.html
